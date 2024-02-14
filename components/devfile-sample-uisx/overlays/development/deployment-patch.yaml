@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uisx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0-4-tenant/tkwch-fix-0075-0069-app/devfile-sample-uisx@sha256:caadc8b573b839be08a616abae9db85a797bb96650054f1bec7d7c0abf58c15f
+        name: my-nodejs
+        resources: {}
+status: {}
